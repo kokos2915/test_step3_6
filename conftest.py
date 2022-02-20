@@ -38,7 +38,7 @@ def browser():
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
-    browser = webdriver.Chrome(executable_path=r'C://Django//chromedriver.exe', options=options)
+    browser = webdriver.Chrome(options=options)
     yield browser
     print("\nquit browser..")
     browser.quit()
